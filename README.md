@@ -16,8 +16,22 @@ This restaurant unfortunately has a number of rules about the meals that can be 
 - There is only one piece of cheesecake left.
 - Pierre the snobby waiter will not let you have prawn cocktail and salmon fillet in the same meal.
 
+## Detailed description
+![alt text](https://raw.githubusercontent.com/dianatamas/menu-booking/master/christmas_dinner.jpg)
+The left card displays the menu provided in the JSON file. If the menu changes, the card will display the updated menu.
+
+The right card allows the user to select a starter, main course and a dessert for 2 people.
+
+If the selection doesn't respect the rules, an error message will be displayed.
+
+The 'Book' button allows the user to start the booking process - this will check for errors, calculate the total price and simulate the loading process (1.5 seconds).
+
+The Reset button allows the user to reset their selection and start from scratch.
+
+
 ## Technical
 The application is developed in React, using npm, Webpack and Babel.
+The Material-UI library is used, which includes Material Design components and facilitates CSS-in-JS using JSS.
 The menu data is provided in `menu-data.json` and the application source code is in `src/`.
 
 ## Tests
