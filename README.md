@@ -36,3 +36,6 @@ The menu data is provided in `menu-data.json` and the application source code is
 
 ## Tests
 Unit tests are written using Jest and Enzyme and can be found in `src/__tests__`
+
+I couldn't manage to configure Babel and Jest (I think it's not the same version of Babel as the one I'm used to work with and didn't have time to investigate more), so the unit tests do not work.
+But in addition to testing the structure of the components, the tests should also make sure that errors are raised if the rules are not respected (using Enzyme's setState and simulate functions).
