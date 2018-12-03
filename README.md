@@ -1,43 +1,38 @@
-OpenTable front-end coding challenge
+Christmas Menu Booking App
 ====================================
 
-Thank you for accepting our coding challenge. Please take as much time as required to give us a good indication of your coding strengths, as your application will provide many topics of conversation in the next interview stage.
+## Description
 
-
-## The task
-
-We would like you to build a web application.
-- The application will allow one user to select dishes on behalf of two diners.
-- The application will present a menu that will be provided and may later require adjustment by a restaurant.
-- The application will enforce some restrictions provided by the restaurant. (see [#rules](#rules))
-
-We have prepared a basic application structure for you using React and Webpack. Please add any additional libraries that you think are suitable, for example for CSS and testing.
-
-The menu data is provided in `menu-data.json` and the application is in `src/App.js`.
-
-Please write as clean and maintainable code as possible, and make sure that it's covered by test cases.
-
+This small web application allows a user to simulate a Christmas dinner booking for 2 people.
+- The app displays the menu provided through a JSON file.
+- The app enforces some rules provided by the restaurant. (see [#rules](#rules))
+- The app must display the total price of the booking
 
 ## Rules
 
-
-_To recap, you will build an interface that allows a user to select dishes for a fixed party of **two diners**._\
 This restaurant unfortunately has a number of rules about the meals that can be ordered.
-
 - Each person must have at least two courses, one of which must be a main.
 - Each diner cannot have more than one of the same course.
 - There is only one piece of cheesecake left.
 - Pierre the snobby waiter will not let you have prawn cocktail and salmon fillet in the same meal.
 
+## Detailed description
+![alt text](https://raw.githubusercontent.com/dianatamas/menu-booking/master/christmas_dinner.jpg)
+The left card displays the menu provided in the JSON file. If the menu changes, the card will display the updated menu.
 
-## Acceptance criteria
+The right card allows the user to select a starter, main course and a dessert for 2 people.
 
-- The total bill amount is displayed when at least one dish has been selected.
-- An error message is displayed when I try to select an invalid menu combination.
+If the selection doesn't respect the rules, an error message will be displayed.
 
+The 'Book' button allows the user to start the booking process - this will check for errors, calculate the total price and simulate the loading process (1.5 seconds).
 
-## Submission
-
-Please submit your program either by sending a zip file or by providing a link to a repository, dropbox, etc to your point of contact at OpenTable.
+The Reset button allows the user to reset their selection and start from scratch.
 
 
+## Technical
+The application is developed in React, using npm, Webpack and Babel.
+The Material-UI library is used, which includes Material Design components and facilitates CSS-in-JS using JSS.
+The menu data is provided in `menu-data.json` and the application source code is in `src/`.
+
+## Tests
+Unit tests are written using Jest and Enzyme and can be found in `src/__tests__`
