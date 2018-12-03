@@ -31,7 +31,7 @@ The Reset button allows the user to reset their selection and start from scratch
 
 ## Technical
 The application is developed in React, using npm, Webpack and Babel.
-The Material-UI library is used, which includes Material Design components and facilitates CSS-in-JS using JSS.
+The Material-UI library is used, which includes Material Design components and facilitates CSS-in-JS using JSS. Using the Grid component also allows us to easily make the app responsive. 
 The menu data is provided in `menu-data.json` and the application source code is in `src/`.
 
 ## Tests
