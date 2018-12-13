@@ -5,7 +5,7 @@ import { createShallow } from '@material-ui/core/test-utils'
 import DinerBooking from '../src/DinerBooking'
 import Card from '@material-ui/core/Card'
 import Typography from '@material-ui/core/Typography'
-import TextField from '@material-ui/core/BUtton'
+import TextField from '@material-ui/core/TextField'
 
 configure({ adapter: new Adapter() })
 
@@ -22,7 +22,7 @@ describe('DinerBooking', () => {
         'dessert': ''
       }
     }
-    mountedComponent = shallow(<DinerBooking diner={1} dinerSelection/>)
+    mountedComponent = shallow(<DinerBooking diner={1} dinerSelection handleChange={() => {}}/>)
   })
 
   it('should contain 3 TextFields', () => {
